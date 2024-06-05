@@ -81,14 +81,8 @@ function collectData($url) {
     // Obtenir la date/heure de collecte
     $date_heure_collecte = date('Y-m-d H:i:s');
 
-    // Extraire les autres données en utilisant XPath
-    $cours = $xpath->query("//span[@class='c-instrument c-instrument--last']")->item(0)->textContent;
-    $cours_ouverture = $xpath->query("//span[@class='c-instrument c-instrument--open']")->item(0)->textContent;
-    $cours_haut = $xpath->query("//span[@class='c-instrument c-instrument--high']")->item(0)->textContent;
-    $cours_bas = $xpath->query("//span[@class='c-instrument c-instrument--low']")->item(0)->textContent;
-    $volumes = $xpath->query("//span[@class='c-instrument c-instrument--totalvolume']")->item(0)->textContent;
-    $cours_cloture = $xpath->query("//span[@class='c-instrument c-instrument--close']")->item(0)->textContent;
 
+    
      
     // Retourner les données sous forme de tableau associatif
     return array(
