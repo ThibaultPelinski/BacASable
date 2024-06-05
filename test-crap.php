@@ -28,7 +28,7 @@ if ($buttons->length > 0) {
       
         
     // Extraire l'URL de téléchargement à partir de l'attribut data-url
-    $downloadUrl = $buttonElement->getAttribute('data-url');
+    $downloadUrl = $buttonElement->getAttribute('data-url'); 
 
     // Télécharger le fichier CSV
     $csvData = file_get_contents($downloadUrl);

@@ -6,7 +6,7 @@ $dbname = 'boursorama';
 $user = 'root';
 $password = '';
 
-// Créer une connexion à la base de données
+// Créer une connexion à la base de données 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $password); 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
