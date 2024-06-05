@@ -8,7 +8,7 @@ $url = 'https://www.boursorama.com/cours/1rPEC/';
 // Récupérer le contenu HTML de la page
 $html = file_get_contents($url);
 
-// Créer un nouvel objet DOMDocument
+// Créer un nouvel objet DOMDocument 
 $dom = new DOMDocument();
 
 // Supprimer les avertissements liés à l'analyse HTML
