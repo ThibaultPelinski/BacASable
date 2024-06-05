@@ -87,7 +87,7 @@ function collectData($url) {
     $cours_haut = $xpath->query("//span[@class='c-instrument c-instrument--high']")->item(0)->textContent;
     $cours_bas = $xpath->query("//span[@class='c-instrument c-instrument--low']")->item(0)->textContent;
     $volumes = $xpath->query("//span[@class='c-instrument c-instrument--totalvolume']")->item(0)->textContent;
-    $cours_cloture = $xpath->query("//span[@class='c-instrument c-instrument--previousclose']")->item(0)->textContent;
+    $cours_cloture = $xpath->query("//span[@class='c-instrument c-instrument--close']")->item(0)->textContent;
 
      
     // Retourner les données sous forme de tableau associatif
