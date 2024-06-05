@@ -2,7 +2,7 @@
 
 // Paramètres de la base de données
 $host = 'localhost';
-$dbname = 'boursorama';
+$dbname = 'boursorama'; 
 $user = 'root';
 $password = '';
 

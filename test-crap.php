@@ -25,7 +25,7 @@ $buttons = $xpath->query('//button[contains(@class, "c-quote-chart__menu-button-
 if ($buttons->length > 0) {
     // Convertir le noeud DOM en un élément DOM
     $buttonElement = $buttons->item(0);
-    
+      
         
     // Extraire l'URL de téléchargement à partir de l'attribut data-url
     $downloadUrl = $buttonElement->getAttribute('data-url');
